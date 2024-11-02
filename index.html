@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estadísticas de Uso</title>
+  <!-- Firebase y Chart.js
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database.js"></script> -->
+  <!-- Firebase en modo compatibilidad -->
+   <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database-compat.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <center><h3>Frases Más Utilizadas</h3></center>
+  <canvas id="chartFrasesMasUtilizadas"></canvas>
+
+  <center><h3>Palabras Más Utilizadas</h3></center>
+  <canvas id="chartPalabrasMasUtilizadas"></canvas>
+
+  <center><h3>Frases Menos Utilizadas</h3></center>
+  <canvas id="chartFrasesMenosUtilizadas"></canvas>
+
+  <center><h3>Palabras Menos Utilizadas</h3></center>
+  <canvas id="chartPalabrasMenosUtilizadas"></canvas>
+
+  <div id="chartMessage"></div> <!-- Mensaje para cuando no haya datos -->
+
+
+  <!-- Script para la lógica de JavaScript -->
+  <script src="analytics.js"></script>
+</body>
+</html>
+
